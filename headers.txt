@@ -2,26 +2,26 @@ Headers
 
 
 Request Headers
-User-Agent: PostmanRuntime/7.36.1
-Accept: */*
-Postman-Token: 9b2987a2-f446-4ff9-83e2-93c4ea63fe4c
-Host: www.googleapis.com
-Accept-Encoding: gzip, deflate, br
-Connection: keep-alive
+User-Agent: PostmanRuntime/7.36.1 - User-Agent set by client to indicate information that pertains to the client
+Accept: */* - Accept this is what the client accepts (in this case all)
+Postman-Token: 9b2987a2-f446-4ff9-83e2-93c4ea63fe4c - this is a unique identitfier like an access token
+Host: www.googleapis.com - is a request that the client wants to access
+Accept-Encoding: gzip, deflate, br - this is encoding that the client can decode and understand
+Connection: keep-alive - keeps the connection between a clint and your server alive (persistent connections)
 
 Response Headers
-Content-Type: application/json; charset=UTF-8
-Vary: Origin
-Vary: X-Origin
-Vary: Referer
-Content-Encoding: gzip
-Date: Sat, 10 Feb 2024 02:28:28 GMT
-Server: ESF
-Cache-Control: private
-X-XSS-Protection: 0
-X-Frame-Options: SAMEORIGIN
-X-Content-Type-Options: nosniff
-Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-Transfer-Encoding: chunked
+Content-Type: application/json; charset=UTF-8 - designates the content to be in JSON format, encoded in the UTF-8
+Vary: Origin - ensures the browser caches responses correctly and will avoid Cross-Orgin Resource Sharing errors
+Vary: X-Origin - response may vary based on X-origin request headers
+Vary: Referer - reponse may vary based on the Referer request headers respectively guiding caches to store and retrieve responses
+Content-Encoding: gzip - used to compress the message data without losing information in this case gzip for efficiency
+Date: Sat, 10 Feb 2024 02:28:28 GMT - timestamp of the response
+Server: ESF - This is the server software handling the request
+Cache-Control: private - Caching control here it will be private to the user
+X-XSS-Protection: 0 - This controls the XSS (Cross-Site Scripting) filtering which in this case has been disabled
+X-Frame-Options: SAMEORIGIN - this here will protect agaisnt clickjacking which is a security feature that helps protect websites against clickjacking attacks
+X-Content-Type-Options: nosniff - this is another security feature which are used by web servers. nosniff instructs the browser nto to perform MIME and MIME type 
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000 - this here allows the server to indicate that another network location can be treated as authoritative for that origin when making future requests
+Transfer-Encoding: chunked - this here means the method of transfering data which they are two ways one is chunked which is being used here and the other is streaming
 Response Body
 Body is more than 10 KB and can only be viewed in editor. 
