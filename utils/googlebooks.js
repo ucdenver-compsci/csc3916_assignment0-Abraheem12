@@ -18,7 +18,7 @@ module.exports = async (phrase) => {
         headers: results.headers,
         requestHeader: results.config.headers
     }
-
+    //testingintnkglasdjf
     //TODO: return the formattedObject
     return JSON.stringify(formattedObj);
 }
