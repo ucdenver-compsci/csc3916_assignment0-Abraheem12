@@ -32,4 +32,5 @@ switch (cmd) {
     default:
         console.error(`"${cmd}" is not a valid command!`)
         break
+        //test
 }
